@@ -11,7 +11,10 @@ public class King extends Character {
 
     @Override
     public void fight() {
+        score += 2;
         System.out.println("I'm a King ...");
         weapon.useWeapon();
+        System.out.println("King's Current Score : " + score);
+        System.out.println("****");
     }
 }

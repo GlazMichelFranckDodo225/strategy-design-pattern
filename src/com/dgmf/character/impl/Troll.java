@@ -11,7 +11,10 @@ public class Troll extends Character {
 
     @Override
     public void fight() {
+        score += 1;
         System.out.println("I'm a Troll ...");
         weapon.useWeapon();
+        System.out.println("Troll's Current Score : " + score);
+        System.out.println("****");
     }
 }
